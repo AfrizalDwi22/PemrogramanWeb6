@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keranjang Belanja 3 Produk per Baris</title>
+  <style>
+    :root {
+    --primary: #e718a2;
+    --hover: #f397d4;
+    --bg1: #d1006c;
+    --bg2: #010101;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+    body {
+      background-color: var(--bg1);
+      font-family: sans-serif;
+      /* background: #f0f0f0; */
+      margin: 20px;
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: var(--primary);
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--primary);
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+
+  .isi {
+    padding: 6rem 7% 1.4rem;
+  }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+      margin: 8px;
+    }
+
+    .produk-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+
+    .produk {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .produk img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .keranjang {
+      background: #fff;
+      max-width: 500px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .total {
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background-color: #28a745;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Diyandha.<span>OLS</span></a>
+    <div class="navbar-nav">
+      <a href="home.html">Home</a>
+      <a href="tentang.html">Profil</a>
+      <a href="produk.html">Produk</a>
+      <a href="shop.html">Shop</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="profil.html">Pengembang</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="#" id="search"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+
+<section class="isi">
+  <h1>Keranjang Belanja</h1>
+
+<div class="produk-container">
+  <div class="produk">
+    <img src="Product/Produk/1.jpg" alt="Knit Jaseline">
+    <h3>Knit Jaseline</h3>
+    <p>Rp 55.000</p>
+  </div>
+  <div class="produk">
+    <img src="Product/Produk/2.jpg" alt="Richa">
+    <h3>Richa</h3>
+    <p>Rp 65.000</p>
+  </div>
+  <div class="produk">
+    <img src="Product/Produk/3.jpg" alt="Labubu">
+    <h3>Labubu</h3>
+    <p>Rp 45.000</p>
+  </div>
+  <div class="produk">
+    <img src="Product/Produk/4.jpg" alt="Ovsz Labubu">
+    <h3>Ovsz Labubu</h3>
+    <p>Rp 55.000</p>
+  </div>
+  <div class="produk">
+    <img src="Product/Produk/5.jpg" alt="Sweater Danger">
+    <h3>Sweater Danger</h3>
+    <p>Rp 65.000</p>
+  </div>
+  <div class="produk">
+    <img src="Product/Produk/6.jpg" alt="Sweater Richa">
+    <h3>Sweater Richa</h3>
+    <p>Rp 65.000</p>
+  </div>
+</div>
+
+<div class="keranjang">
+  <h2>Pilih Produk yang Ingin Dibeli</h2>
+  <form id="formBelanja" onsubmit="prosesPembelian(event)">
+    <label><input type="checkbox" value="55000" data-nama="Knit Jaseline" onchange="hitungTotal()"> Knit Jaseline - Rp 55.000</label>
+    <label><input type="checkbox" value="65000" data-nama="Richa" onchange="hitungTotal()"> Richa - Rp 65.000</label>
+    <label><input type="checkbox" value="45000" data-nama="Labubu" onchange="hitungTotal()"> Labubu - Rp 45.000</label>
+    <label><input type="checkbox" value="55000" data-nama="Ovsz Labubu" onchange="hitungTotal()"> Ovsz Labubu - Rp 55.000</label>
+    <label><input type="checkbox" value="65000" data-nama="Sweater Danger" onchange="hitungTotal()"> Sweater Danger - Rp 65.000</label>
+    <label><input type="checkbox" value="65000" data-nama="Sweater Richa" onchange="hitungTotal()"> Sweater Richa - Rp 65.000</label>
+
+    <div class="total" id="total">Total: Rp 0</div>
+    <button type="submit">Beli Sekarang</button>
+  </form>
+</div>
+</section>
+
+<script>
+  function hitungTotal() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    let total = 0;
+    checkboxes.forEach(box => {
+      if (box.checked) {
+        total += parseInt(box.value);
+      }
+    });
+    document.getElementById('total').textContent = "Total: Rp " + total.toLocaleString('id-ID');
+  }
+
+  function prosesPembelian(event) {
+    event.preventDefault();
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    if (checkboxes.length === 0) {
+      alert("Silakan pilih minimal 1 produk.");
+      return;
+    }
+
+    let daftarProduk = [];
+    let total = 0;
+
+    checkboxes.forEach(box => {
+      const namaProduk = box.dataset.nama;
+      const harga = parseInt(box.value);
+      daftarProduk.push(`- ${namaProduk} (Rp ${harga.toLocaleString('id-ID')})`);
+      total += harga;
+    });
+
+    const pesan = `
+Produk yang Anda beli:\n\n${daftarProduk.join("\n")}\n\nTotal: Rp ${total.toLocaleString('id-ID')}
+Terima kasih atas pembelian Anda!
+    `;
+    alert(pesan);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diyandha.OLS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Diyandha.<span>OLS</span></a>
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="tentang.html">Profil</a>
+        <a href="produk.html">Produk</a>
+        <a href="shop.html">Shop</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="profil.html">Pengembang</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- SHOP SECTION START -->
+<!-- SHOP SECTION START -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Yuk!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #d1006c;
+      color: #000000;
+      
+    }
+
+    section.shops {
+      text-align: center;
+      width: 100%;
+      padding: 1rem;
+      flex: 1;
+    }
+
+    section.shops h2 {
+      font-size: 2.5rem;
+      margin-top: 6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section.shops h2 span {
+      color: #ffffff;
+    }
+
+    section.shops p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #000000;
+    }
+
+    .shop {
+      width: 100%;
+      size: 1rem;
+    }
+
+    .shop-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    a.shop-1 {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      text-align: center;
+    }
+
+    a.shop-1:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    a.shop-1 img {
+      width: 90px;
+      height: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 10px;
+    }
+
+    a.shop-1 h3 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+
+    a.shop-1 .price {
+      font-size: 0.9rem;
+      color: #e718a2;
+      font-weight: bold;
+    }
+    .shop .background {
+        color: #d1006c;
+    }
+
+    @media (max-width: 770px) {
+      .shop-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .shop-content {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        overflow-y: auto; /* Agar tetap bisa scroll jika terlalu panjang di hp */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="shops" id="shopping">
+    <h2><span>Shopping</span> Yuk!</h2>
+    <p>
+      Belanja baju bukan sekadar fashion—ini soal gaya dan kepribadian! Yuk temukan favoritmu di sini.
+    </p>
+
+    <div class="shop">
+      <div class="shop-content">
+        <a href="isi.html" class="shop-1" data-name="p-1">
+          <img src="Product/Menu/1.jpg" alt="Knit Jaseline" />
+          <h3>Knit Jaseline</h3>
+          <div class="price">IDR 55K</div>
+        </a>
+        <a href="isi.html" class="shop-1" data-name="p-2">
+          <img src="Product/Menu/2.jpg" alt="Richa" />
+          <h3>Richa</h3>
+          <div class="price">IDR 65K</div>
+        </a>
+        <a href="isi.html" class="shop-1" data-name="p-3">
+          <img src="Product/Menu/3.jpg" alt="Labubu" />
+          <h3>Labubu</h3>
+          <div class="price">IDR 45K</div>
+        </a>
+        <a href="isi.html" class="shop-1" data-name="p-4">
+          <img src="Product/Menu/4.jpg" alt="Ovrsz Labubu" />
+          <h3>Ovrsz Labubu</h3>
+          <div class="price">IDR 55K</div>
+        </a>
+        <a href="isi.html" class="shop-1" data-name="p-5">
+          <img src="Product/Menu/6.jpg" alt="Sweater Danger" />
+          <h3>Sweater Danger</h3>
+          <div class="price">IDR 55K</div>
+        </a>
+        <a href="isi.html" class="shop-1" data-name="p-6">
+          <img src="Product/Menu/7.jpg" alt="Sweater Richa" />
+          <h3>Sweater Richa</h3>
+          <div class="price">IDR 65K</div>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+    <!-- SHOP SECTION END -->
+
+      <!-- FOOTER START -->
+    <footer>
+      <footer>
+        <div class="socials">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+          
+          <div class="container">
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>Email:diyandaols02@gmail.com</p>
+              <p>Phone:+62 875 9671 1230</p>
+            </div>
+
+      <div class="credit">
+        <p>Created by <a href="#">kelompok 6</a>. | &copy; 2024/2025.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+  
+  </body>
+</html>

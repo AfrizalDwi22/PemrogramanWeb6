@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diyandha.OLS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="edit.svg"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Diyandha.<span>OLS</span></a>
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="tentang.html">Profil</a>
+        <a href="produk.html">Produk</a>
+        <a href="shop.html">Shop</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="profil.html">Pengembang</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- CONTACT SECTION START -->
+    <section class="contact" id="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Kami di sini untuk menjawab semua kebutuhan fashion Anda. Jangan ragu untuk menghubungi kami—baik untuk pertanyaan, konsultasi ukuran, atau informasi produk. Tim kami siap membantu Anda kapan saja!
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15803.187137278695!2d112.18264168544876!3d-8.01987957412385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78f2870f58cac1%3A0x1f0aa626f960603!2sRejosan%2C%20Ngoran%2C%20Kec.%20Nglegok%2C%20Kabupaten%20Blitar%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1732546783839!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="edit"></i>
+            <input type="text" placeholder="ulasan" />
+          </div>
+          <button type="submit" class="btn">kirim ulasan</button>
+        </form>
+      </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+      <!-- FOOTER START -->
+    <footer>
+      <footer>
+        <div class="socials">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+          
+          <div class="container">
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>Email:diyandaols02@gmail.com</p>
+              <p>Phone:+62 875 9671 1230</p>
+            </div>
+
+      <div class="credit">
+        <p>Created by <a href="#">kelompok 6</a>. | &copy; 2024/2025.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <style>
+      
+    /* CONTACT SECTION */                 /* Komentar: Bagian untuk mengatur tampilan bagian kontak */
+.contact .row {                       /* Aturan untuk elemen dengan kelas 'row' di dalam elemen dengan kelas 'contact' */
+  display: flexbox;                      /* Menjadikan elemen 'row' sebagai flex container untuk tata letak fleksibel */
+  margin-top: 2rem;                   /* Memberikan margin atas sebesar 2rem untuk memberi jarak dari elemen di atasnya */
+  background-color: pink;            /* Mengatur warna latar belakang elemen 'row' menjadi merah muda */
+}
+
+.contact .row .map {
+  flex: 1 1 30rem; /* Ubah 40rem menjadi nilai yang lebih kecil, misal 30rem */
+  width: auto;     /* Biarkan width menyesuaikan berdasarkan flex-basis */
+  object-fit: cover;
+  padding: 0.30px;
+}
+
+.contact .row form {                  /* Aturan untuk elemen <form> di dalam elemen 'row' dan 'contact' */
+  flex: 1 1 45rem;                    /* Mengatur properti fleksibel untuk form: flex-grow: 1, flex-shrink: 1, flex-basis: 45rem */
+  padding: 5rem 2rem;                 /* Memberikan padding atas/bawah 5rem dan kiri/kanan 2rem di dalam form */
+  text-align: center;                 /* Mengatur teks di dalam form menjadi rata tengah */
+}
+
+.contact .row form .input-group {      /* Aturan untuk elemen dengan kelas 'input-group' di dalam form */
+  display: flex;                      /* Menjadikan 'input-group' sebagai flex container untuk tata letak elemen di dalamnya */
+  align-items: center;                /* Mengatur item-item di dalam 'input-group' agar vertikal rata tengah */
+  margin-top: 2rem;                   /* Memberikan margin atas sebesar 2rem untuk memberi jarak antar input group */
+  background-color: var(--bg1);       /* Mengatur warna latar belakang 'input-group' menggunakan variabel CSS '--bg1' */
+  border: 1px solid #eee;             /* Memberikan border tipis 1px berwarna abu-abu muda pada 'input-group' */
+  padding-left: 2rem;                 /* Memberikan padding kiri sebesar 2rem di dalam 'input-group' */
+}
+
+.contact .row form .input-group input { /* Aturan untuk elemen <input> di dalam 'input-group' */
+  width: 100%;                        /* Memastikan lebar input selalu 100% dari lebar parent-nya ('input-group') */
+  padding: 2rem;                     /* Memberikan padding sebesar 2rem di semua sisi di dalam input */
+  font-size: 1.7rem;                  /* Mengatur ukuran font teks di dalam input menjadi 1.7rem */
+  background: none;                   /* Menghilangkan latar belakang default input */
+  color: #f6f0f0;                     /* Mengatur warna teks di dalam input menjadi abu-abu muda */
+}
+
+.contact .row form .btn {             /* Aturan untuk elemen dengan kelas 'btn' di dalam form */
+  margin-top: 3rem;                   /* Memberikan margin atas sebesar 3rem untuk memberi jarak dari input terakhir */
+  display: inline-block;              /* Membuat tombol menjadi inline-block, memungkinkan pengaturan width/height dan inline */
+  padding: 1rem 3rem;                 /* Memberikan padding atas/bawah 1rem dan kiri/kanan 3rem pada tombol */
+  font-size: 1.7rem;                  /* Mengatur ukuran font teks pada tombol menjadi 1.7rem */
+  color: #fff;                        /* Mengatur warna teks pada tombol menjadi putih */
+  background-color: var(--primary);   /* Mengatur warna latar belakang tombol menggunakan variabel CSS '--primary' */
+  cursor: pointer;                    /* Mengubah kursor menjadi pointer saat dihover di atas tombol */
+}
+
+.contact .map-container {
+  width: 250px;   /* Ubah 300px menjadi nilai yang lebih kecil */
+  height: 150px;  /* Ubah 200px menjadi nilai yang lebih kecil */
+}
+
+/* Atau menggunakan ukuran tetap */     /* Komentar: Alternatif pengaturan ukuran tetap */
+.contact .map-container {
+  width: 40%;    /* Ubah 50% menjadi nilai yang lebih kecil */
+  height: auto;   /* Biarkan tinggi menyesuaikan */
+}
+      /* FOOTER */
+footer {
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 0.20rem 0.5rem 0.20rem; /* Kurangi padding atas, samping, dan bawah */
+  margin-top: 1rem; /* Kurangi margin atas jika perlu */
+  box-sizing: border-box;
+  width: 100%; /* Pastikan tetap selebar viewport */
+}
+
+footer .socials {
+  padding: 0.20rem 0; /* Kurangi padding atas dan bawah */
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 0 0.2rem; /* Kurangi margin antar ikon */
+  font-size: 1em; /* Sesuaikan ukuran ikon (gunakan unit relatif) */
+  text-decoration: none;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg2);
+}
+
+footer .links {
+  margin-bottom: 0.20rem; /* Kurangi margin bawah */
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.2rem 0.4rem; /* Kurangi padding tautan */
+  text-decoration: none;
+}
+
+footer .container {
+  color: white;
+  font-size: 0.9em; /* Kecilkan ukuran font container */
+  padding-bottom: 0.5rem; /* Kurangi padding bawah */
+  padding: 20px;
+}
+
+footer .credit {
+  font-size: 0.6rem; /* Lebih kecilkan ukuran font credit */
+  margin-top: 0.5rem; /* Kurangi margin atas */
+}
+
+footer .credit a {
+  color: var(--bg2);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* (Pertahankan gaya body dan main untuk penempatan footer di bawah) */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.hero {
+  height: 75vh;
+}
+    </style>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
